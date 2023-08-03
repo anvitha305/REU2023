@@ -25,7 +25,8 @@ model = keras.models.load_model("mnist.keras")
 
 # get loss and accuracy statistics
 loss, acc = model.evaluate(x_test, y_test, verbose=2)
-
+with open("mnist_stats.txt", "w+") as f:
+    f.write("Loss: " + str(loss)+"\n" + "Accuracy: "+str(acc))
 # predict values to build a confusion matrix
 y_pred = model.predict(x_test)
 
