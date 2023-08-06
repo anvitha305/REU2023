@@ -9,20 +9,6 @@ import matplotlib.pyplot as plt
 import random
 from pylab import savefig
 
-# load MNIST data for the training and test images and labels
-# [need them to evaluate the model]
-(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-
-# format the data to run the tests:
-x_test = x_test.reshape(10000, 28*28)
-x_test = x_test.astype("float32")
-
-y_test = tf.keras.utils.to_categorical(y_test, 10)
-choices = random.sample(range(10000), 5000)
-x_test = [x_test[i] for i in choices]
-y_test = [y_test[i] for i in choices]
-x_test = np.array(x_test)
-y_test = np.array(y_test)
 
 # import the MNIST model to evaluate it on a local machine
 model = keras.models.load_model("mnist.keras")
