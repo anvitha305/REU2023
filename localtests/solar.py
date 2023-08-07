@@ -21,6 +21,5 @@ if not os.path.exists("yolov5/"):
     os.system("cd ..")
 test_set_loc = "solar-panel-infrared-images-5/test/images/"
 random_test_image = random.choice(os.listdir(test_set_loc))
-print(random_test_image)
 os.system("python3 yolov5/detect.py --weights solar.pt --img 416 --conf 0.1 --source " + test_set_loc+random_test_image)
 os.system("python3 yolov5/val.py --weights solar.pt --img 416 --conf 0.1 --data solar-panel-infrared-images-5/data.yaml")
