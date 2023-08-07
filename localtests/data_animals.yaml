@@ -1,0 +1,11 @@
+names:
+- cat
+- chicken
+- cow
+- dog
+- elephant
+- horse
+nc: 6
+test: ../animals-yolov5-1/test/images
+train: ../animals-yolov5-1/train/images
+val: ../animals-yolov5-1/valid/images

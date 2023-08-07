@@ -15,10 +15,10 @@ if not os.path.exists("animals-yolov5-1/"):
     rf = Roboflow(str(key))
     project = rf.workspace("yolo-2xmbu").project("animals-yolov5-gslnk")
     dataset = project.version(1).download("yolov5")
+    os.system("cp data_animals.yaml animals-yolov5-1/data.yaml"
 if not os.path.exists("yolov5/"):
     os.system("git clone https://github.com/ultralytics/yolov5")
     os.system("pip3 install -qr yolov5/requirements.txt")
-    os.system("cd ..")
 test_set_loc = "animals-yolov5-1/test/images/"
 random_test_image = random.choice(os.listdir(test_set_loc))
 os.system("python3 yolov5/detect.py --weights animals.pt --img 416 --conf 0.1 --source " + test_set_loc+random_test_image)

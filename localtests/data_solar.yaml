@@ -1,0 +1,13 @@
+names:
+- diode
+- hotspot
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: solar-panel-infrared-images
+  url: https://universe.roboflow.com/solarpanelimages/solar-panel-infrared-images/dataset/5
+  version: 5
+  workspace: solarpanelimages
+test: ../solar-panel-infrared-images-5/test/images
+train: ../solar-panel-infrared-images-5/train/images
+val: ../solar-panel-infrared-images-5/valid/images
