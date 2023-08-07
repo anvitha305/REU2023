@@ -1,4 +1,9 @@
 # api key for downloading data for models
+edgetests/secret.txt
 localtests/secret.txt
+edgetests/yolov5
 localtests/yolov5
+edgetests/solar-panel-infrared-images-5
 localtests/solar-panel-infrared-images-5
+edgetests/animals-yolov5-1
+localtests/animals-yolov5-1
