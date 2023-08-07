@@ -1,2 +1,4 @@
 # api key for downloading data for models
 localtests/secret.txt
+localtests/yolov5
+localtests/solar-panel-infrared-images-5

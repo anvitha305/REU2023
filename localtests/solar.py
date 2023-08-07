@@ -8,43 +8,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 from pylab import savefig
-
-
-# format the data to run the tests:
-x_test = x_test.reshape(10000, 28*28)
-x_test = x_test.astype("float32")
-
-y_test = tf.keras.utils.to_categorical(y_test, 10)
-choices = random.sample(range(10000), 5000)
-x_test = [x_test[i] for i in choices]
-y_test = [y_test[i] for i in choices]
-x_test = np.array(x_test)
-y_test = np.array(y_test)
-
-# import the MNIST model to evaluate it on a local machine
-model = keras.models.load_model("mnist.keras")
-
-# get loss and accuracy statistics
-loss, acc = model.evaluate(x_test, y_test, verbose=2)
-with open("mnist_stats.txt", "w+") as f:
-    f.write("Loss: " + str(loss)+"\n" + "Accuracy: "+str(acc))
-# predict values to build a confusion matrix
-y_pred = model.predict(x_test)
-
-# predictions and ground-truth to one-hot vectors
-y_pred_classes = np.argmax(y_pred,axis = 1)
-y_true = np.argmax(y_test,axis = 1)
-
-
-
-# compute the confusion matrix
-confusion_mtx = tf.math.confusion_matrix(y_true, y_pred_classes) 
-
-# plot confusion matrix
-plt.figure(figsize=(10, 8))
-mn = sns.heatmap(confusion_mtx, annot=True, fmt='g')
-plt.xlabel("True Numbers")
-plt.ylabel("Predicted Numbers")
-plt.title("MNIST Dataset Number Prediction Confusion Matrix")
-plt.savefig('mnist_local.png', dpi=400)
+# getting dataset from Roboflow
+from roboflow import Roboflow
+import os
+#print("hiiii :3")
+# use api key to get dataset
+if not os.path.exists("solar-panel-infrared-images-5/"):
+    f = open("secret.txt", "r")
+    key = f.readline()[:-1]
+    rf = Roboflow(str(key))
+    project = rf.workspace("solarpanelimages").project("solar-panel-infrared-images")
+    dataset = project.version(5).download("yolov5")
+test_set_loc = "solar-panel-infrared-images-5/test/images/"
+random_test_image = random.choice(os.listdir(test_set_loc))
+print(random_test_image)
+os.system("python3 detect.py --weights solar_model --img 416 --conf 0.1 --source " + test_set_loc)
 
