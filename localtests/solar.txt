@@ -1,0 +1,281 @@
+2023-08-08 12:03:11.572425: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:03:11.656031: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:03:11.656698: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:03:12.701859: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-21_jpg.rf.d632ed3aa8300880fe1a5d9680b9ea5f.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-21_jpg.rf.d632ed3aa8300880fe1a5d9680b9ea5f.jpg: 416x416 7 hotspots, 117.3ms
+Speed: 0.9ms pre-process, 117.3ms inference, 1.2ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 0.9ms pre-process, 331.6ms inference, 15.9ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp
+2023-08-08 12:04:12.181869: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:04:12.246285: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:04:12.247000: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:04:13.298980: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/Drone_Solar_Sample1_mp4-130_jpg.rf.94eb82e6b2b3025b084c5b75c781b9d2.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/Drone_Solar_Sample1_mp4-130_jpg.rf.94eb82e6b2b3025b084c5b75c781b9d2.jpg: 416x416 155 diodes, 2 hotspots, 159.5ms
+Speed: 1.7ms pre-process, 159.5ms inference, 3.1ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp2
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 1.4ms pre-process, 388.0ms inference, 7.3ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp2
+2023-08-08 12:05:22.804515: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:05:22.852894: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:05:22.853514: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:05:23.726396: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/20170710_145155_jpg.rf.1e060f1128c6e1cf86342e2a7fb08436.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/20170710_145155_jpg.rf.1e060f1128c6e1cf86342e2a7fb08436.jpg: 416x416 1 hotspot, 177.1ms
+Speed: 0.6ms pre-process, 177.1ms inference, 1.4ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp3
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 2.7ms pre-process, 471.9ms inference, 22.6ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp3
+2023-08-08 12:06:35.906375: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:06:35.967013: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:06:35.967565: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:06:37.004383: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/DJI_0223_jpg.rf.414365ad5832bfdd847871ff55b5cf72.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/DJI_0223_jpg.rf.414365ad5832bfdd847871ff55b5cf72.jpg: 416x416 5 diodes, 192.4ms
+Speed: 3.2ms pre-process, 192.4ms inference, 1.9ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp4
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 1.4ms pre-process, 406.1ms inference, 19.5ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp4
+2023-08-08 12:07:47.707394: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:07:47.757642: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:07:47.758201: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:07:48.868213: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/20170710_145114_jpg.rf.dddf919c3e547e6bff4170067ed771f3.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/20170710_145114_jpg.rf.dddf919c3e547e6bff4170067ed771f3.jpg: 416x416 1 hotspot, 165.3ms
+Speed: 0.9ms pre-process, 165.3ms inference, 1.1ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp5
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 1.3ms pre-process, 388.9ms inference, 3.0ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp5
+2023-08-08 12:08:55.971931: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:08:56.027715: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:08:56.028434: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:08:56.909181: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-102_jpg.rf.72fcf911b6be2b8d3c9facf754f22ee3.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-102_jpg.rf.72fcf911b6be2b8d3c9facf754f22ee3.jpg: 416x416 3 hotspots, 132.2ms
+Speed: 1.9ms pre-process, 132.2ms inference, 1.2ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp6
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 3.1ms pre-process, 448.8ms inference, 8.1ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp6
+2023-08-08 12:10:09.004437: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:10:09.054247: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:10:09.054765: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:10:09.945385: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-27_jpg.rf.c179eb342b66a30a9b5e6a900140c45c.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/Drone_Solar_Sample2_mp4-27_jpg.rf.c179eb342b66a30a9b5e6a900140c45c.jpg: 416x416 5 hotspots, 149.4ms
+Speed: 1.5ms pre-process, 149.4ms inference, 1.3ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp7
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 0.7ms pre-process, 371.6ms inference, 16.3ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp7
+2023-08-08 12:11:21.664983: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:11:21.714345: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:11:21.714861: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:11:22.596641: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/20170818_114915_jpg.rf.5cd5cc85f942570ddbc4d54bb4fec75a.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/20170818_114915_jpg.rf.5cd5cc85f942570ddbc4d54bb4fec75a.jpg: 416x416 1 hotspot, 176.2ms
+Speed: 1.9ms pre-process, 176.2ms inference, 1.2ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp8
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 0.8ms pre-process, 331.2ms inference, 5.2ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp8
+2023-08-08 12:12:24.943484: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:12:24.990653: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:12:24.991218: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:12:25.873281: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/20170818_114910_jpg.rf.8c3b299c7c3b6b7be221a4e57f3384ec.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/20170818_114910_jpg.rf.8c3b299c7c3b6b7be221a4e57f3384ec.jpg: 416x416 1 hotspot, 129.4ms
+Speed: 0.8ms pre-process, 129.4ms inference, 1.2ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp9
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 1.0ms pre-process, 340.1ms inference, 19.7ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp9
+2023-08-08 12:13:25.453033: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:13:25.501843: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 12:13:25.502454: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 12:13:26.358686: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['solar.pt'], source=solar-panel-infrared-images-5/test/images/DJI_0317_jpg.rf.93a4d15c8390172f0be228bade3ee0b4.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/test/images/DJI_0317_jpg.rf.93a4d15c8390172f0be228bade3ee0b4.jpg: 416x416 5 diodes, 115.0ms
+Speed: 0.7ms pre-process, 115.0ms inference, 1.0ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp10
+val: data=solar-panel-infrared-images-5/data.yaml, weights=['solar.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/solar-panel-infrared-images-5/val
+                 Class     Images  Instances          P          R      mAP50   
+                   all         39       1086      0.604      0.552      0.545      0.258
+                 diode         39       1004      0.484      0.348      0.309     0.0788
+               hotspot         39         82      0.724      0.756       0.78      0.438
+Speed: 0.7ms pre-process, 322.7ms inference, 8.9ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp10
+

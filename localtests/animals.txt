@@ -1,0 +1,325 @@
+rm: cannot remove 'yolov5/runs/val/': No such file or directory
+2023-08-08 11:55:26.494517: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:55:26.540486: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:55:26.541070: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:55:27.425061: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_G7mJhmgMDJ9y_yXm3ArBAHaFj_jpeg.rf.e3d15236ed455e0dd3a85bd995c74e92.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_G7mJhmgMDJ9y_yXm3ArBAHaFj_jpeg.rf.e3d15236ed455e0dd3a85bd995c74e92.jpg: 416x416 1 horse, 108.3ms
+Speed: 0.8ms pre-process, 108.3ms inference, 1.1ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cac
+                 Class     Images  Instances          P          R      mAP50   
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 0.8ms pre-process, 139.5ms inference, 0.9ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp
+2023-08-08 11:55:47.577536: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:55:47.627819: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:55:47.628744: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:55:48.494791: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/e83db30d2cfc003ed1584d05fb1d4e9fe777ead218ac104497f5c978a4efb4bb_640_jpg.rf.aea8e0749849c97cf9f4c51e57960657.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/e83db30d2cfc003ed1584d05fb1d4e9fe777ead218ac104497f5c978a4efb4bb_640_jpg.rf.aea8e0749849c97cf9f4c51e57960657.jpg: 416x416 1 elephant, 157.8ms
+Speed: 0.7ms pre-process, 157.8ms inference, 1.2ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp2
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:03<00:00,  3.59s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 1.0ms pre-process, 109.2ms inference, 0.5ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp2
+2023-08-08 11:56:08.473111: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:56:08.532198: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:56:08.532898: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:56:09.437395: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg: 416x416 (no detections), 172.1ms
+Speed: 8.5ms pre-process, 172.1ms inference, 0.7ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp3
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:06<00:00,  6.67s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 1.6ms pre-process, 202.9ms inference, 2.2ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp3
+2023-08-08 11:56:35.887061: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:56:35.967244: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:56:35.968199: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:56:37.249118: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg: 416x416 (no detections), 191.8ms
+Speed: 6.0ms pre-process, 191.8ms inference, 2.5ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp4
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:06<00:00,  6.47s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 3.2ms pre-process, 198.5ms inference, 1.1ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp4
+2023-08-08 11:57:03.236607: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:57:03.311131: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:57:03.311773: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:57:04.965295: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_ldNZbUn7uMvIdsTA6bKHAHaIP_jpeg.rf.a8047b57053d2d2ccbea2caf84f69bb6.jpg: 416x416 (no detections), 1436.4ms
+Speed: 1.5ms pre-process, 1436.4ms inference, 1.7ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp5
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:07<00:00,  7.09s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 1.8ms pre-process, 218.4ms inference, 2.6ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp5
+2023-08-08 11:57:35.423375: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:57:35.483762: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:57:35.484356: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:57:36.817952: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_YhteqH1eojqiNVzyYf9SAHaFG_jpeg.rf.b9b48016d95adb5903fd61e2e1c09b76.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_YhteqH1eojqiNVzyYf9SAHaFG_jpeg.rf.b9b48016d95adb5903fd61e2e1c09b76.jpg: 416x416 2 cows, 338.2ms
+Speed: 1.4ms pre-process, 338.2ms inference, 2.7ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp6
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 2.5ms pre-process, 259.3ms inference, 2.0ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp6
+2023-08-08 11:58:09.568361: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:58:09.627718: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:58:09.628472: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:58:10.932473: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/OIP-_YhteqH1eojqiNVzyYf9SAHaFG_jpeg.rf.b9b48016d95adb5903fd61e2e1c09b76.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/OIP-_YhteqH1eojqiNVzyYf9SAHaFG_jpeg.rf.b9b48016d95adb5903fd61e2e1c09b76.jpg: 416x416 2 cows, 139.4ms
+Speed: 4.5ms pre-process, 139.4ms inference, 1.9ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp7
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:06<00:00,  6.57s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 1.9ms pre-process, 201.2ms inference, 1.4ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp7
+2023-08-08 11:58:37.631333: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:58:37.683023: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:58:37.683644: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:58:39.044277: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/e83db30d2cfc003ed1584d05fb1d4e9fe777ead218ac104497f5c978a4efb4bb_640_jpg.rf.aea8e0749849c97cf9f4c51e57960657.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/e83db30d2cfc003ed1584d05fb1d4e9fe777ead218ac104497f5c978a4efb4bb_640_jpg.rf.aea8e0749849c97cf9f4c51e57960657.jpg: 416x416 1 elephant, 188.1ms
+Speed: 3.0ms pre-process, 188.1ms inference, 2.0ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp8
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:07<00:00,  7.73s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 2.2ms pre-process, 232.2ms inference, 2.2ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp8
+2023-08-08 11:59:10.642987: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:59:10.723601: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:59:10.724425: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:59:12.200478: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/134_jpeg.rf.b7306d3368ef8d2d450507013d59e7ac.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/134_jpeg.rf.b7306d3368ef8d2d450507013d59e7ac.jpg: 416x416 1 cat, 1 dog, 161.4ms
+Speed: 5.3ms pre-process, 161.4ms inference, 1.8ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp9
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:07<00:00,  7.48s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 2.1ms pre-process, 225.5ms inference, 1.3ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp9
+2023-08-08 11:59:38.812638: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:59:38.868425: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-08-08 11:59:38.868953: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:59:39.993594: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+detect: weights=['animals.pt'], source=animals-yolov5-1/test/images/30_jpeg.rf.901f732f09aa450f02007ab345c054b3.jpg, data=yolov5/data/coco128.yaml, imgsz=[416, 416], conf_thres=0.1, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+image 1/1 /home/anvitha/REU2023/localtests/animals-yolov5-1/test/images/30_jpeg.rf.901f732f09aa450f02007ab345c054b3.jpg: 416x416 1 chicken, 164.3ms
+Speed: 0.9ms pre-process, 164.3ms inference, 3.6ms NMS per image at shape (1, 3, 416, 416)
+Results saved to yolov5/runs/detect/exp10
+val: data=animals-yolov5-1/data.yaml, weights=['animals.pt'], batch_size=32, imgsz=416, conf_thres=0.1, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=yolov5/runs/val, name=exp, exist_ok=False, half=False, dnn=False
+WARNING ⚠️ confidence threshold 0.1 > 0.001 produces invalid results
+YOLOv5 🚀 v7.0-203-g0897415 Python-3.10.12 torch-2.0.1+cu117 CPU
+
+Fusing layers... 
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Model summary: 157 layers, 7026307 parameters, 0 gradients, 15.8 GFLOPs
+val: Scanning /home/anvitha/REU2023/localtests/animals-yolov5-1/valid/labels.cache... 30 images, 1 backgrounds, 0 corrupt: 100%|██████████| 30/30 [00:00<?, ?it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:06<00:00,  6.94s/it]
+                   all         30         41      0.892      0.574      0.707      0.508
+                   cat         30          6      0.963        0.5      0.648        0.5
+               chicken         30          6          1      0.795      0.972      0.755
+                   cow         30          4       0.65        0.5      0.552      0.325
+                   dog         30          3      0.753      0.667      0.713      0.471
+              elephant         30         13      0.983      0.692      0.792      0.581
+                 horse         30          9          1      0.292      0.567      0.417
+Speed: 2.3ms pre-process, 209.0ms inference, 2.3ms NMS per image at shape (32, 3, 416, 416)
+Results saved to yolov5/runs/val/exp10
+mkdir: cannot create directory ‘animals’: File exists
+mkdir: cannot create directory ‘animals/detect’: File exists
+mkdir: cannot create directory ‘animals/val’: File exists
+
